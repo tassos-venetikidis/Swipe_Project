@@ -36,6 +36,8 @@
   --standard-width: 1144px;
 }
 
+/* GENERAL ELEMENT STYLES AND UTILITY CLASSES */
+
 body {
   font-family: var(--body-font);
   color: var(--text-dark);
@@ -190,14 +192,45 @@ p {
   transform: translateX(4px);
 }
 
+.section-container {
+  width: 100%;
+  max-width: var(--standard-width);
+}
+
+.two-column {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.two-column > .col-left {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 var(--spacing-md) 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.two-column > .col-right {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 0 0 var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
 /* NAVBAR */
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: var(--standard-width);
   padding: 0 var(--spacing-md);
 }
 
