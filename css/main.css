@@ -788,6 +788,13 @@ p {
     width: 100%;
     height: auto;
   }
+
+  .integrations-section .col-left {
+    width: 60%;
+  }
+  .integrations-section .col-right {
+    width: 40%;
+  }
 }
 
 /* TABLET SIZE */
@@ -799,6 +806,14 @@ p {
   }
 
   .unified-platform-section h2 {
+    width: 100%;
+  }
+
+  .integrations-section .card-container {
+    flex-direction: column;
+  }
+
+  .integrations-section .card-container .card {
     width: 100%;
   }
 }
@@ -820,4 +835,15 @@ p {
   .partners-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .integrations-section .col-right {
+    display: none;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
