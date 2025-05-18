@@ -270,6 +270,11 @@ p {
   align-items: center;
   padding: 0 var(--spacing-md);
   margin-bottom: var(--spacing-xl);
+  box-sizing: border-box;
+}
+
+.navbar .hamburger-button {
+  display: none;
 }
 
 .menu {
@@ -832,6 +837,32 @@ p {
     --h3-size: 34px;
   }
 
+  .navbar {
+    margin-top: var(--spacing-sm);
+  }
+
+  .navbar .menu,
+  .navbar .navbar-button {
+    display: none;
+  }
+
+  .navbar .hamburger-button {
+    width: 50px;
+    height: 30px;
+    background-color: rgba(250, 250, 250, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .navbar .hamburger-button .bar {
+    width: 18px;
+    height: 2px;
+    background-color: var(--bg-white);
+  }
   main {
     margin: 0;
   }
