@@ -29,6 +29,8 @@
   --primary-button-hover: #6d7a88;
   --bg-white: #fff;
   --bg-light: #f7f9fc;
+
+  --standard-border-radius: 20px;
   --standard-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
   --primary-gradient: linear-gradient(
     101.33deg,
@@ -162,7 +164,7 @@ p {
   letter-spacing: 1.25px;
   font-weight: bold;
   border: none;
-  border-radius: 20px;
+  border-radius: var(--standard-border-radius);
   background-color: var(--primary-accent);
   padding: var(--spacing-sm) var(--spacing-md);
   transition: all 0.15s ease;
@@ -180,7 +182,7 @@ p {
   letter-spacing: 1.25px;
   font-weight: bold;
   border: none;
-  border-radius: 20px;
+  border-radius: var(--standard-border-radius);
   background-color: transparent;
   transition: all 0.15s ease;
 }
@@ -416,24 +418,26 @@ p {
   grid-area: card;
   width: 100%;
   box-shadow: var(--standard-box-shadow);
+  border-radius: var(--standard-border-radius);
 }
 
 #slack-invoice {
   grid-area: slack;
   width: 100%;
   box-shadow: var(--standard-box-shadow);
+  border-radius: var(--standard-border-radius);
 }
 
 #phone {
   grid-area: phone;
   width: 100%;
-  box-shadow: var(--standard-box-shadow);
 }
 
 #dash {
   grid-area: dash;
   width: 100%;
   box-shadow: var(--standard-box-shadow);
+  border-radius: var(--standard-border-radius);
 }
 
 /* INTEGRATIONS SECTION */
@@ -496,7 +500,7 @@ p {
 .integrations-section #api-code,
 .integrations-section #terminal-code {
   max-width: 470px;
-  border-radius: 20px;
+  border-radius: var(--standard-border-radius);
 }
 
 .integrations-section #api-code {
@@ -620,7 +624,7 @@ p {
 .swipe-sessions-card {
   width: 540px;
   height: 446px;
-  border-radius: 20px;
+  border-radius: var(--standard-border-radius);
   box-shadow: var(--standard-box-shadow);
   overflow: hidden;
 }
@@ -847,7 +851,7 @@ p {
     width: 50px;
     height: 30px;
     background-color: rgba(250, 250, 250, 0.25);
-    border-radius: 20px;
+    border-radius: var(--standard-border-radius);
     display: flex;
     flex-direction: column;
     justify-content: center;
