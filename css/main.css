@@ -896,12 +896,20 @@ p {
     width: 100%;
   }
 
+  .integrations-section {
+    padding: calc(var(--spacing-xl) * 2) 0 calc(var(--spacing-xl) * 3) 0;
+  }
+
   .integrations-section .card-container {
     flex-direction: column;
   }
 
   .integrations-section .card-container .card {
     width: 100%;
+  }
+
+  .why-swipe-section {
+    padding: 0 0 var(--spacing-xl) 0;
   }
 
   .why-swipe-section .card-container {
@@ -972,8 +980,24 @@ p {
     grid-template-columns: 1fr 1fr;
   }
 
+  .unified-platform-section {
+    padding: var(--spacing-md) 0;
+  }
+
+  .integrations-section {
+    padding: var(--spacing-md) 0 var(--spacing-lg) 0;
+  }
+
+  .integrations-section::before {
+    height: 920px;
+  }
+
   .integrations-section .col-right {
     display: none;
+  }
+
+  .why-swipe-section {
+    padding: var(--spacing-xl) 0;
   }
 
   .why-swipe-section .card-container .card {
@@ -985,6 +1009,14 @@ p {
     height: 35px;
   }
 
+  .global-section {
+    padding: var(--spacing-md) 0 var(--spacing-lg);
+  }
+
+  .global-section .card-container {
+    margin: var(--spacing-md) 0;
+  }
+
   .global-section .card-container .card {
     width: 100%;
     margin: var(--spacing-sm) 0;
@@ -992,6 +1024,10 @@ p {
 
   .global-section #globe {
     opacity: 10%;
+  }
+
+  .virtual-events-section {
+    padding: 0;
   }
 
   .virtual-events-section .swipe-sessions-card {
@@ -1009,6 +1045,10 @@ p {
 
   .virtual-events-section #sessions-logo {
     width: 300px;
+  }
+
+  .getting-started-section {
+    padding: var(--spacing-md) 0;
   }
 
   .footer .section-container {
