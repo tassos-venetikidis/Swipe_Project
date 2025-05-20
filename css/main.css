@@ -1,3 +1,4 @@
+/* VARIABLES */
 :root {
   /* FONT VARIABLES */
   --text-dark: #000;
@@ -20,6 +21,7 @@
   --secondary-text-size: 14px;
   --secondary-text-height: 18px;
   --button-size: 16px;
+  /* COLOR VARIABLES */
   --purple-1: #6962f7;
   --purple-2: #7000ff;
   --blue-1: #00d4ff;
@@ -45,11 +47,16 @@
 }
 
 /* GENERAL ELEMENT STYLES AND UTILITY CLASSES */
+html,
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
 
 body {
   font-family: var(--body-font);
   color: var(--text-dark);
-  width: 100%;
   margin: 0;
   box-sizing: border-box;
   padding: var(--spacing-sm) 0 0 0;
@@ -75,16 +82,6 @@ h1 {
   width: 100%;
   letter-spacing: -1px;
 }
-
-/* h2 {
-  font-family: var(--heading-font);
-  font-weight: 500;
-  font-size: var(--h2-size);
-  line-height: var(--h2-height);
-  margin: 0;
-  width: 100%;
-  letter-spacing: -0.25px;
-} */
 
 h2,
 h3 {
@@ -302,7 +299,7 @@ p {
   background-color: rgba(250, 250, 250, 0.5);
 }
 
-/* ANIMATED GRADIENT */
+/* ANIMATED GRADIENT HERO BACKGROUND*/
 
 #gradient-canvas {
   width: 200%;
@@ -326,6 +323,10 @@ p {
   justify-content: center;
 }
 
+.hero p {
+  max-width: 480px;
+}
+
 .button-container {
   display: flex;
   margin: var(--spacing-md) 0;
@@ -334,10 +335,6 @@ p {
 .button-container button:nth-of-type(2) {
   margin: 0 0 0 var(--spacing-md);
   color: var(--purple-2);
-}
-
-.hero p {
-  max-width: 480px;
 }
 
 .hero .hero-phone-container {
@@ -658,8 +655,6 @@ p {
   z-index: 3;
   bottom: -70px;
   left: var(--spacing-xl);
-  /* width: 140px;
-  height: 80px; */
 }
 
 .virtual-events-section .avatars img {
@@ -782,6 +777,7 @@ p {
   font-weight: 700;
 }
 
+/* CUSTOM BREAKPOINT */
 @media only screen and (max-width: 1144px) {
   :root {
     --h1-size: 80px;
@@ -806,6 +802,7 @@ p {
   }
 }
 
+/* ANOTHER CUSTOM BREAKPOINT */
 @media only screen and (max-width: 850px) {
   :root {
     --h1-size: 70px;
@@ -829,7 +826,7 @@ p {
   }
 }
 
-/* TABLET SIZE */
+/* TABLET SIZE BREAKPOINT */
 @media only screen and (max-width: 768px) {
   :root {
     --h1-size: 58px;
@@ -945,7 +942,7 @@ p {
   }
 }
 
-/* MOBILE SIZE */
+/* MOBILE SIZE BREAKPOINT */
 @media only screen and (max-width: 580px) {
   main {
     margin-top: var(--spacing-md);
@@ -1071,11 +1068,4 @@ p {
   .footer .icon-link img {
     width: 18px;
   }
-}
-
-html,
-body {
-  width: 100%;
-  position: relative;
-  overflow-x: hidden;
 }
